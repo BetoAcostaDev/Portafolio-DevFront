@@ -482,7 +482,7 @@ body {
 
 /* Indicador visual para IA */
 .skill-card.featured::before {
-    content: 'Nueva Competencia';
+    content: 'Nueva Habilidad';
     position: absolute;
     top: 15px;
     right: -30px;
