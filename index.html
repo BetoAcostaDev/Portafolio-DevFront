@@ -412,5 +412,12 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <!-- Script para actualizar el año automáticamente -->
+<script>
+    (function() {
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) yearSpan.innerText = new Date().getFullYear();
+    })();
+</script>
 </body>
 </html>
