@@ -1011,88 +1011,37 @@ body {
     }
 }
 
-/* Estilos para LSC en contacto 
-.lsc-info {
-    margin-top: 20px;
-    padding: 15px;
-    background: linear-gradient(135deg, #e8f4fc, #f0f7ff);
-    border-radius: 10px;
-    border-left: 4px solid #2ecc71;
+/* Footer - imagen centrada y responsive */
+.footer .footer-imagen {
+    display: block;           /* Permite centrar con margin auto */
+    margin: 0 auto 20px auto; /* Centrado horizontal + separación inferior */
+    max-width: 80%;           /* En escritorio ocupa hasta 80% del footer */
+    width: auto;              /* Ancho automático, respeta max-width */
+    height: auto;             /* Altura automática, mantiene proporción */
+    border-radius: 16px;      /* Bordes suaves (opcional) */
+    background-color: #f8f9fa; /* Fondo por si la imagen tiene transparencia */
+    padding: 6px;             /* Espacio interno sutil */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
-.lsc-badge {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #2c3e50;
-    font-weight: 500;
-    margin: 0;
-    position: relative;
-}
-
-.lsc-badge i {
-    color: #2ecc71;
-    font-size: 1.3rem;
-}
-
-.tooltip {
-    display: none;
-    position: absolute;
-    background-color: #2c3e50;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 100;
-}
-
-.tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #2c3e50 transparent transparent transparent;
-}
-
-.lsc-badge:hover .tooltip {
-    display: block;
-}*/
-
-/* Footer - Imagen centrada y atractiva */
-.footer .footer-logo {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.footer .footer-logo img {
-    max-width: min(180px, 70%);   /* En móviles ocupa hasta el 70% del ancho del footer */
-    width: auto;    
-    height: auto;
-    display: inline-block;
-    border-radius: 20px;       /* Bordes redondeados */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #f8f9fa; /* Fondo sutil por si la imagen tiene transparencia */
-    padding: 8px;              /* Pequeño espacio alrededor */
-}
-
-/* Efecto hover para darle dinamismo */
-.footer .footer-logo img:hover {
+/* Efecto hover (opcional, mejora la interacción) */
+.footer .footer-imagen:hover {
     transform: scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Asegura que el copyright también esté centrado */
+/* Ajuste para móviles: imagen más pequeña */
+@media (max-width: 600px) {
+    .footer .footer-imagen {
+        max-width: 70%;       /* Reduce el tamaño en pantallas pequeñas */
+        margin-bottom: 15px;
+    }
+}
+
+/* Copyright centrado y legible */
 .footer .footer-copyright {
     text-align: center;
-    font-size: 0.9rem;
-    color: #6c757d;
+    font-size: 0.85rem;
+    color: #ccc;
     margin-top: 0.5rem;
 }
