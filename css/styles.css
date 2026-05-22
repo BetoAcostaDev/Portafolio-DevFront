@@ -1018,11 +1018,11 @@ body {
     max-width: 80%;           /* En escritorio ocupa hasta 80% del footer */
     width: auto;              /* Ancho automático, respeta max-width */
     height: auto;             /* Altura automática, mantiene proporción */
-    border-radius: 16px;      /* Bordes suaves (opcional) */
-    background-color: #f8f9fa; /* Fondo por si la imagen tiene transparencia */
+   /*  border-radius: 16px;   */    /* Bordes suaves (opcional) */
+   /*  background-color: #f8f9fa; */ /*  Fondo por si la imagen tiene transparencia */
     padding: 6px;             /* Espacio interno sutil */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+   /*  transition: transform 0.2s ease; */
 }
 
 /* Efecto hover (opcional, mejora la interacción) */
