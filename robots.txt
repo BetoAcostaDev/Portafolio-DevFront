@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://betoacostadev.github.io/Portafolio-DevFront/sitemap.xml
